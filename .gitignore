@@ -1,0 +1,19 @@
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+.env
+
+# Editors / IDEs
+.vscode/
+.idea/
+*.swp
+
+# Clojure / LSP caches
+.clj-kondo/.cache/
+.lsp/.cache/
