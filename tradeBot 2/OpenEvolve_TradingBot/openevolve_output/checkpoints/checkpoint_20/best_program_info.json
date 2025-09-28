@@ -1,0 +1,22 @@
+{
+  "id": "a2ef47a3-1fdd-4d3e-9d23-0caa7c2837e0",
+  "generation": 3,
+  "iteration": 7,
+  "current_iteration": 20,
+  "metrics": {
+    "IsSuccessfulEval": 0.0,
+    "profitability_score": 0.0,
+    "risk_score": 0.0,
+    "consistency_score": 0.0,
+    "efficiency_score": 0.0,
+    "overall_fitness": 0.0,
+    "profit_total_abs": 0.0,
+    "profit_total_pct": 0.0,
+    "trades": 0,
+    "winrate": 0.0,
+    "max_drawdown_account": 1.0
+  },
+  "language": "python",
+  "timestamp": 1754003322.805272,
+  "saved_at": 1754003663.814927
+}

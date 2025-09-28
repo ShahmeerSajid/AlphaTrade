@@ -1,0 +1,86 @@
+2025-06-26T20:32:47.8064506Z TRACE:: Engine.Main(): LEAN ALGORITHMIC TRADING ENGINE v2.5.0.0 Mode: DEBUG (64bit) Host: Salmans-MacBook-Pro
+2025-06-26T20:32:47.8189166Z TRACE:: Engine.Main(): Started 8:32 PM
+2025-06-26T20:32:47.8237743Z TRACE:: Config.Get(): Configuration key not found. Key: lean-manager-type - Using default value: LocalLeanManager
+2025-06-26T20:32:47.8406441Z TRACE:: JobQueue.NextJob(): Selected /LeanCLI/main.py
+2025-06-26T20:32:47.8668467Z TRACE:: Config.GetValue(): scheduled-event-leaky-bucket-capacity - Using default value: 120
+2025-06-26T20:32:47.8685772Z TRACE:: Config.GetValue(): scheduled-event-leaky-bucket-time-interval-minutes - Using default value: 1440
+2025-06-26T20:32:47.8703962Z TRACE:: Config.GetValue(): scheduled-event-leaky-bucket-refill-amount - Using default value: 18
+2025-06-26T20:32:47.8722537Z TRACE:: Config.GetValue(): storage-limit - Using default value: 10737418240
+2025-06-26T20:32:47.8732027Z TRACE:: Config.GetValue(): storage-permissions - Using default value: 3
+2025-06-26T20:32:47.8752624Z TRACE:: Config.Get(): Configuration key not found. Key: optimization-id - Using default value: 
+2025-06-26T20:32:47.8767151Z TRACE:: Config.Get(): Configuration key not found. Key: backtest-name - Using default value: local
+2025-06-26T20:32:47.8827680Z TRACE:: Config.Get(): Configuration key not found. Key: data-channel - Using default value: 
+2025-06-26T20:32:47.8847765Z TRACE:: Config.Get(): Configuration key not found. Key: python-venv - Using default value: 
+2025-06-26T20:32:47.8863409Z TRACE:: Config.Get(): Configuration key not found. Key: out-of-sample-max-end-date - Using default value: 
+2025-06-26T20:32:47.8881590Z TRACE:: Config.GetValue(): out-of-sample-days - Using default value: 0
+2025-06-26T20:32:47.8904052Z TRACE:: Config.Get(): Configuration key not found. Key: data-permission-manager - Using default value: DataPermissionManager
+2025-06-26T20:32:47.8912061Z TRACE:: Config.Get(): Configuration key not found. Key: data-monitor - Using default value: QuantConnect.Data.DataMonitor
+2025-06-26T20:32:47.9033119Z TRACE:: Config.GetValue(): algorithm-creation-timeout - Using default value: 90
+2025-06-26T20:32:47.9105863Z TRACE:: Config.GetValue(): zip-data-cache-provider - Using default value: 10
+2025-06-26T20:32:47.9138512Z TRACE:: Config.Get(): Configuration key not found. Key: fundamental-data-provider - Using default value: CoarseFundamentalDataProvider
+2025-06-26T20:32:47.9171248Z TRACE:: AlgorithmManager.CreateTokenBucket(): Initializing LeakyBucket: Capacity: 120 RefillAmount: 18 TimeInterval: 1440
+2025-06-26T20:32:47.9189214Z TRACE:: Config.GetValue(): algorithm-manager-time-loop-maximum - Using default value: 20
+2025-06-26T20:32:47.9249539Z TRACE:: Config.GetValue(): downloader-data-update-period - Using default value: 7
+2025-06-26T20:32:47.9283496Z TRACE:: Engine.Run(): Resource limits '0' CPUs. 2147483647 MB RAM.
+2025-06-26T20:32:47.9299452Z TRACE:: TextSubscriptionDataSourceReader.SetCacheSize(): Setting cache size to 71582788 items
+2025-06-26T20:32:48.5349196Z TRACE:: PythonInitializer.Initialize(): start...
+2025-06-26T20:32:48.8610720Z TRACE:: PythonInitializer.Initialize(): ended
+2025-06-26T20:32:48.8637507Z TRACE:: AlgorithmPythonWrapper(): Python version 3.11.9 | packaged by conda-forge | (main, Apr 19 2024, 18:26:34) [GCC 12.3.0]: Importing python module main
+2025-06-26T20:32:50.7533278Z TRACE:: AlgorithmPythonWrapper(): main successfully imported.
+2025-06-26T20:32:50.7594946Z TRACE:: AlgorithmPythonWrapper(): Creating IAlgorithm instance.
+2025-06-26T20:32:50.7673054Z TRACE:: Config.Get(): Configuration key not found. Key: databases-refresh-period - Using default value: 1.00:00:00
+2025-06-26T20:32:50.8291780Z TRACE:: Config.GetValue(): mute-python-library-logging - Using default value: True
+2025-06-26T20:32:50.8336702Z TRACE:: LocalObjectStore.Initialize(): Storage Root: /Storage. StorageFileCount 9999999. StorageLimit 10240MB
+2025-06-26T20:32:50.8395169Z TRACE:: Config.GetValue(): zip-data-cache-provider - Using default value: 10
+2025-06-26T20:32:50.8430729Z TRACE:: HistoryProviderManager.Initialize(): history providers [SubscriptionDataReaderHistoryProvider]
+2025-06-26T20:32:50.8486425Z TRACE:: BaseSetupHandler.Setup(LocalPlatform): UID: 392260, PID: -342623970, Version: 2.5.0.0, Source: WebIDE
+2025-06-26T20:32:50.8522219Z TRACE:: Config.Get(): Configuration key not found. Key: security-data-feeds - Using default value: 
+2025-06-26T20:32:50.8801414Z TRACE:: BacktestingResultHandler(): Sample Period Set: 131.76
+2025-06-26T20:32:50.8823516Z TRACE:: Config.GetValue(): forward-console-messages - Using default value: True
+2025-06-26T20:32:50.9070909Z ERROR:: Engine.Run(): During the algorithm initialization, the following exception has occurred: Crypto 'TAOUSDT' symbol could not be found in the database for bybit market
+  at initialize
+    self.symbol = self.add_crypto(self.SYMBOL, self.RES).Symbol
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ in main.py: line 33
+ Crypto 'TAOUSDT' symbol could not be found in the database for bybit market
+2025-06-26T20:32:50.9093542Z TRACE:: JOB HANDLERS:
+         DataFeed:             QuantConnect.Lean.Engine.DataFeeds.FileSystemDataFeed
+         Setup:                QuantConnect.Lean.Engine.Setup.BacktestingSetupHandler
+         RealTime:             QuantConnect.Lean.Engine.RealTime.BacktestingRealTimeHandler
+         Results:              QuantConnect.Lean.Engine.Results.BacktestingResultHandler
+         Transactions:         QuantConnect.Lean.Engine.TransactionHandlers.BacktestingTransactionHandler
+         Object Store:         QuantConnect.Lean.Engine.Storage.LocalObjectStore
+         History Provider:     QuantConnect.Lean.Engine.HistoricalData.HistoryProviderManager
+         Brokerage:            QuantConnect.Brokerages.Backtesting.BacktestingBrokerage
+         Data Provider:        QuantConnect.Lean.Engine.DataFeeds.DefaultDataProvider
+
+2025-06-26T20:32:50.9114690Z TRACE:: FileSystemDataFeed.Exit(): Start. Setting cancellation token...
+2025-06-26T20:32:50.9135360Z TRACE:: FileSystemDataFeed.Exit(): Exit Finished.
+2025-06-26T20:32:50.9153450Z TRACE:: BacktestingResultHandler.Exit(): starting...
+2025-06-26T20:32:50.9216270Z TRACE:: BacktestingResultHandler.Exit(): Saving logs...
+2025-06-26T20:32:50.9315235Z ERROR:: During the algorithm initialization, the following exception has occurred: Crypto 'TAOUSDT' symbol could not be found in the database for bybit market
+  at initialize
+    self.symbol = self.add_crypto(self.SYMBOL, self.RES).Symbol
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ in main.py: line 33
+ Crypto 'TAOUSDT' symbol could not be found in the database for bybit market
+ Crypto 'TAOUSDT' symbol could not be found in the database for bybit market
+  at initialize
+    self.symbol = self.add_crypto(self.SYMBOL, self.RES).Symbol
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ in main.py: line 33
+ Crypto 'TAOUSDT' symbol could not be found in the database for bybit market
+2025-06-26T20:32:50.9316053Z TRACE:: StopSafely(): Waiting for 'Result Thread' thread to stop...
+2025-06-26T20:32:50.9332178Z TRACE:: Debug: Your log was successfully created and can be retrieved from: /Results/1772139822-log.txt
+2025-06-26T20:32:50.9357109Z TRACE:: BacktestingResultHandler.Run(): Ending Thread...
+2025-06-26T20:32:51.0011308Z TRACE:: 
+STATISTICS:: OrderListHash d41d8cd98f00b204e9800998ecf8427e
+2025-06-26T20:32:51.0023346Z TRACE:: BacktestingResultHandler.SendAnalysisResult(): Processed final packet
+2025-06-26T20:32:51.0042758Z TRACE:: Engine.Run(): Disconnecting from brokerage...
+2025-06-26T20:32:51.0053051Z TRACE:: Engine.Run(): Disposing of setup handler...
+2025-06-26T20:32:51.0072735Z TRACE:: Engine.Main(): Analysis Completed and Results Posted.
+2025-06-26T20:32:51.0113042Z TRACE:: Engine.Main(): Packet removed from queue: 1772139822
+2025-06-26T20:32:51.0131753Z TRACE:: LeanEngineSystemHandlers.Dispose(): start...
+2025-06-26T20:32:51.0153683Z TRACE:: LeanEngineSystemHandlers.Dispose(): Disposed of system handlers.
+2025-06-26T20:32:51.0171014Z TRACE:: LeanEngineAlgorithmHandlers.Dispose(): start...
+2025-06-26T20:32:51.0191629Z TRACE:: LeanEngineAlgorithmHandlers.Dispose(): Disposed of algorithm handlers.

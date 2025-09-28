@@ -1,0 +1,30 @@
+{
+  "strategy_name": "GaussianChannelStochRSIStrategy",
+  "params": {
+    "roi": {},
+    "stoploss": {
+      "stoploss": -1.0
+    },
+    "trailing": {
+      "trailing_stop": false,
+      "trailing_stop_positive": null,
+      "trailing_stop_positive_offset": 0.0,
+      "trailing_only_offset_is_reached": false
+    },
+    "max_open_trades": {
+      "max_open_trades": 1
+    },
+    "buy": {
+      "channel_multiplier": 2.4981604753894,
+      "d_length": 20,
+      "gaussian_length": 38,
+      "k_length": 11,
+      "rsi_length": 13,
+      "stoch_length": 18
+    },
+    "sell": {},
+    "protection": {}
+  },
+  "ft_stratparam_v": 1,
+  "export_time": "2025-07-01 12:08:52.335646+00:00"
+}

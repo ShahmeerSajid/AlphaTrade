@@ -1,0 +1,292 @@
+├── OpenEvolve_TradingBot
+│   ├── __pycache__
+│   │   └── trading_strategy_evaluator.cpython-312.pyc
+│   ├── config.yaml
+│   ├── openevolve_trading.py
+│   ├── test_evaluator.py
+│   ├── trading_strategy_evaluator.py
+│   └── tree.txt
+├── README.md
+├── backtests
+│   ├── 2025-06-26_16-46-27
+│   │   ├── 1414855926-log.txt
+│   │   ├── 1414855926-order-events.json
+│   │   ├── 1414855926-summary.json
+│   │   ├── 1414855926.json
+│   │   ├── code
+│   │   │   ├── main.py
+│   │   │   └── research.ipynb
+│   │   ├── config
+│   │   ├── data-monitor-report-20250626115553613.json
+│   │   ├── failed-data-requests-20250626115549466.txt
+│   │   ├── log.txt
+│   │   └── succeeded-data-requests-20250626115549466.txt
+│   ├── 2025-06-27_00-55-04
+│   │   ├── 1255067962-log.txt
+│   │   ├── 1255067962-order-events.json
+│   │   ├── 1255067962-summary.json
+│   │   ├── 1255067962.json
+│   │   ├── code
+│   │   │   ├── main.py
+│   │   │   └── research.ipynb
+│   │   ├── config
+│   │   ├── data-monitor-report-20250626195528081.json
+│   │   ├── failed-data-requests-20250626195524225.txt
+│   │   ├── log.txt
+│   │   └── succeeded-data-requests-20250626195524225.txt
+│   ├── 2025-06-27_01-03-04
+│   │   ├── 1365383093-log.txt
+│   │   ├── 1365383093-order-events.json
+│   │   ├── 1365383093-summary.json
+│   │   ├── 1365383093.json
+│   │   ├── code
+│   │   │   ├── main.py
+│   │   │   └── research.ipynb
+│   │   ├── config
+│   │   ├── data-monitor-report-20250626200308950.json
+│   │   ├── failed-data-requests-20250626200305431.txt
+│   │   ├── log.txt
+│   │   └── succeeded-data-requests-20250626200305431.txt
+│   ├── 2025-06-27_01-05-08
+│   │   ├── 1164246038-log.txt
+│   │   ├── 1164246038-order-events.json
+│   │   ├── 1164246038-summary.json
+│   │   ├── 1164246038.json
+│   │   ├── code
+│   │   │   ├── main.py
+│   │   │   └── research.ipynb
+│   │   ├── config
+│   │   ├── data-monitor-report-20250626200512541.json
+│   │   ├── failed-data-requests-20250626200509162.txt
+│   │   ├── log.txt
+│   │   └── succeeded-data-requests-20250626200509162.txt
+│   ├── 2025-06-27_01-05-31
+│   │   ├── 1944695171-log.txt
+│   │   ├── 1944695171-summary.json
+│   │   ├── 1944695171.json
+│   │   ├── code
+│   │   │   ├── main.py
+│   │   │   └── research.ipynb
+│   │   ├── config
+│   │   ├── data-monitor-report-20250626200536274.json
+│   │   ├── failed-data-requests-20250626200532836.txt
+│   │   ├── log.txt
+│   │   └── succeeded-data-requests-20250626200532836.txt
+│   ├── 2025-06-27_01-06-15
+│   │   ├── code
+│   │   │   ├── main.py
+│   │   │   └── research.ipynb
+│   │   ├── config
+│   │   ├── failed-data-requests-20250626200616909.txt
+│   │   ├── log.txt
+│   │   └── succeeded-data-requests-20250626200616909.txt
+│   ├── 2025-06-27_01-07-24
+│   │   ├── 1853170123-log.txt
+│   │   ├── 1853170123-order-events.json
+│   │   ├── 1853170123-summary.json
+│   │   ├── 1853170123.json
+│   │   ├── code
+│   │   │   ├── main.py
+│   │   │   └── research.ipynb
+│   │   ├── config
+│   │   ├── data-monitor-report-20250626201356781.json
+│   │   ├── failed-data-requests-20250626200725891.txt
+│   │   ├── log.txt
+│   │   └── succeeded-data-requests-20250626200725891.txt
+│   ├── 2025-06-27_01-23-59
+│   │   ├── code
+│   │   │   ├── main.py
+│   │   │   └── research.ipynb
+│   │   ├── config
+│   │   └── log.txt
+│   ├── 2025-06-27_01-27-01
+│   │   ├── 1263405907-log.txt
+│   │   ├── 1263405907-summary.json
+│   │   ├── 1263405907.json
+│   │   ├── code
+│   │   │   ├── main.py
+│   │   │   └── research.ipynb
+│   │   ├── config
+│   │   ├── data-monitor-report-20250626202706074.json
+│   │   ├── failed-data-requests-20250626202702672.txt
+│   │   ├── log.txt
+│   │   └── succeeded-data-requests-20250626202702672.txt
+│   ├── 2025-06-27_01-32-09
+│   │   ├── 1339567685-log.txt
+│   │   ├── 1339567685-summary.json
+│   │   ├── 1339567685.json
+│   │   ├── code
+│   │   │   ├── main.py
+│   │   │   └── research.ipynb
+│   │   ├── config
+│   │   ├── data-monitor-report-20250626203214646.json
+│   │   ├── failed-data-requests-20250626203211116.txt
+│   │   ├── log.txt
+│   │   └── succeeded-data-requests-20250626203211116.txt
+│   ├── 2025-06-27_01-32-46
+│   │   ├── 1772139822-log.txt
+│   │   ├── 1772139822-summary.json
+│   │   ├── 1772139822.json
+│   │   ├── code
+│   │   │   ├── main.py
+│   │   │   └── research.ipynb
+│   │   ├── config
+│   │   └── log.txt
+│   ├── 2025-06-27_01-33-09
+│   │   ├── 1613117510-log.txt
+│   │   ├── 1613117510-summary.json
+│   │   ├── 1613117510.json
+│   │   ├── code
+│   │   │   ├── main.py
+│   │   │   └── research.ipynb
+│   │   ├── config
+│   │   ├── data-monitor-report-20250626203314747.json
+│   │   ├── failed-data-requests-20250626203311171.txt
+│   │   ├── log.txt
+│   │   └── succeeded-data-requests-20250626203311171.txt
+│   ├── 2025-06-27_01-33-51
+│   │   ├── 1767552806-log.txt
+│   │   ├── 1767552806-summary.json
+│   │   ├── 1767552806.json
+│   │   ├── code
+│   │   │   ├── main.py
+│   │   │   └── research.ipynb
+│   │   ├── config
+│   │   └── log.txt
+│   ├── 2025-06-27_01-46-33
+│   │   ├── 1369133603-log.txt
+│   │   ├── 1369133603-summary.json
+│   │   ├── 1369133603.json
+│   │   ├── code
+│   │   │   ├── main.py
+│   │   │   └── research.ipynb
+│   │   ├── config
+│   │   ├── data-monitor-report-20250626204637966.json
+│   │   ├── failed-data-requests-20250626204634587.txt
+│   │   ├── log.txt
+│   │   └── succeeded-data-requests-20250626204634587.txt
+│   └── 2025-06-27_01-46-59
+│       ├── 1140343833-log.txt
+│       ├── 1140343833-summary.json
+│       ├── 1140343833.json
+│       ├── code
+│       │   ├── main.py
+│       │   └── research.ipynb
+│       ├── config
+│       ├── data-monitor-report-20250626204703741.json
+│       ├── failed-data-requests-20250626204700487.txt
+│       ├── log.txt
+│       └── succeeded-data-requests-20250626204700487.txt
+├── config.json
+├── freqtrade
+│   ├── ft_userdata
+│   │   ├── README.md
+│   │   ├── analyze_eth.py
+│   │   ├── backtest.sh
+│   │   ├── concat_data.py
+│   │   ├── convert_ohlcv.sh
+│   │   ├── docker-compose.yml
+│   │   ├── download.sh
+│   │   ├── eval_config.json
+│   │   ├── generate_graph.py
+│   │   ├── open_backtests.sh
+│   │   ├── optimize.sh
+│   │   ├── simulate.py
+│   │   ├── user_data
+│   │   │   ├── backtest_results
+│   │   │   │   ├── backtest-result-2025-07-27_20-42-29.meta.json
+│   │   │   │   ├── backtest-result-2025-07-27_20-42-29.zip
+│   │   │   │   ├── backtest-result-2025-07-27_20-44-52.meta.json
+│   │   │   │   ├── backtest-result-2025-07-27_20-44-52.zip
+│   │   │   │   ├── backtest-result-2025-07-27_20-47-13.meta.json
+│   │   │   │   ├── backtest-result-2025-07-27_20-47-13.zip
+│   │   │   │   ├── backtest-result-2025-07-27_20-47-27.meta.json
+│   │   │   │   ├── backtest-result-2025-07-27_20-47-27.zip
+│   │   │   │   ├── backtest-result-2025-07-27_20-49-44.meta.json
+│   │   │   │   ├── backtest-result-2025-07-27_20-49-44.zip
+│   │   │   │   ├── backtest-result-2025-07-27_20-50-02.meta.json
+│   │   │   │   └── backtest-result-2025-07-27_20-50-02.zip
+│   │   │   ├── config.json
+│   │   │   ├── config_eth.json
+│   │   │   ├── config_multitoken.json
+│   │   │   ├── config_tao.json
+│   │   │   ├── data
+│   │   │   │   └── kraken
+│   │   │   │       ├── BNB_USD-15m.feather
+│   │   │   │       ├── BNB_USD-1d.feather
+│   │   │   │       ├── BNB_USD-1h.feather
+│   │   │   │       ├── BNB_USD-1m.feather
+│   │   │   │       ├── BNB_USD-trades.feather
+│   │   │   │       ├── BTC_USD-15m.feather
+│   │   │   │       ├── BTC_USD-1d.feather
+│   │   │   │       ├── BTC_USD-1h.feather
+│   │   │   │       ├── BTC_USD-1m.feather
+│   │   │   │       ├── BTC_USD-trades.feather
+│   │   │   │       ├── DOGE_USD-15m.feather
+│   │   │   │       ├── DOGE_USD-1d.feather
+│   │   │   │       ├── DOGE_USD-1h.feather
+│   │   │   │       ├── DOGE_USD-1m.feather
+│   │   │   │       ├── DOGE_USD-trades.feather
+│   │   │   │       ├── ETH_USD-15m.feather
+│   │   │   │       ├── ETH_USD-1d.feather
+│   │   │   │       ├── ETH_USD-1h.feather
+│   │   │   │       ├── ETH_USD-1m.feather
+│   │   │   │       ├── ETH_USD-trades.feather
+│   │   │   │       ├── FARTCOIN_USD-15m.feather
+│   │   │   │       ├── FARTCOIN_USD-1d.feather
+│   │   │   │       ├── FARTCOIN_USD-1h.feather
+│   │   │   │       ├── FARTCOIN_USD-1m.feather
+│   │   │   │       ├── FARTCOIN_USD-trades.feather
+│   │   │   │       ├── LINK_USD-15m.feather
+│   │   │   │       ├── LINK_USD-1d.feather
+│   │   │   │       ├── LINK_USD-1h.feather
+│   │   │   │       ├── LINK_USD-1m.feather
+│   │   │   │       ├── LINK_USD-trades.feather
+│   │   │   │       ├── LTC_USD-15m.feather
+│   │   │   │       ├── LTC_USD-1d.feather
+│   │   │   │       ├── LTC_USD-1h.feather
+│   │   │   │       ├── LTC_USD-1m.feather
+│   │   │   │       ├── LTC_USD-trades.feather
+│   │   │   │       ├── SOL_USD-15m.feather
+│   │   │   │       ├── SOL_USD-1d.feather
+│   │   │   │       ├── SOL_USD-1h.feather
+│   │   │   │       ├── SOL_USD-1m.feather
+│   │   │   │       ├── SOL_USD-trades.feather
+│   │   │   │       ├── TAO_USD-15m.feather
+│   │   │   │       ├── TAO_USD-1d.feather
+│   │   │   │       ├── TAO_USD-1h.feather
+│   │   │   │       ├── TAO_USD-1m.feather
+│   │   │   │       ├── TAO_USD-trades.feather
+│   │   │   │       ├── XRP_USD-15m.feather
+│   │   │   │       ├── XRP_USD-1d.feather
+│   │   │   │       ├── XRP_USD-1h.feather
+│   │   │   │       ├── XRP_USD-1m.feather
+│   │   │   │       └── XRP_USD-trades.feather
+│   │   │   ├── eval_config.json
+│   │   │   ├── freqaimodels
+│   │   │   ├── hyperopt_results
+│   │   │   ├── hyperopts
+│   │   │   │   └── sample_hyperopt_loss.py
+│   │   │   ├── logs
+│   │   │   ├── notebooks
+│   │   │   │   └── strategy_analysis_example.ipynb
+│   │   │   ├── plot
+│   │   │   ├── strategies
+│   │   │   │   ├── bollinger_bands.py
+│   │   │   │   ├── evolved_strategies
+│   │   │   │   │   └── best_strategy
+│   │   │   │   │       └── InnovativeStrategy.py
+│   │   │   │   ├── grok_strategy.py
+│   │   │   │   ├── no_loss_16k_profit.json
+│   │   │   │   ├── outputted-params.json
+│   │   │   │   ├── random_strategy.py
+│   │   │   │   └── sample_strategy.py
+│   │   │   └── tradesv3.sqlite
+│   │   └── validate_trades.py
+│   ├── past_setup.md
+│   ├── requirements.txt
+│   └── setup.sh
+├── lean.json
+├── main.py
+├── requirements.txt
+└── research.ipynb

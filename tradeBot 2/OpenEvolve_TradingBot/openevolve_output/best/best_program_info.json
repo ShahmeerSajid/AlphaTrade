@@ -1,0 +1,24 @@
+{
+  "id": "bd17572c-98ff-4e35-abbe-86f0ac5fc9b7",
+  "generation": 0,
+  "iteration": 0,
+  "timestamp": 1756751370.26475,
+  "parent_id": null,
+  "metrics": {
+    "IsSuccessfulEval": 1.0,
+    "Strategy": "RandomStrategy",
+    "overall_fitness": 0.16778517863187398,
+    "profit_total_pct": -85.34,
+    "trades": 179,
+    "profitability_score": 0.14659999999999995,
+    "risk_score": 0.11957692598354475,
+    "consistency_score": 0.770949720670391,
+    "efficiency_score": 0.0,
+    "profit_total_abs": -853.40554531,
+    "wins": 138.0,
+    "winrate": 0.770949720670391,
+    "max_drawdown_account": 0.8804230740164553
+  },
+  "language": "python",
+  "saved_at": 1756753555.0676632
+}

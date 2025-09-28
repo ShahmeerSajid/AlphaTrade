@@ -1,0 +1,6 @@
+/crypto/bybit/daily/btcdai_trade.zip
+/crypto/bybit/daily/solusdt_trade.zip
+/crypto/bybit/daily/solusdt_trade.zip
+/crypto/bybit/daily/solusdt_quote.zip
+/crypto/bybit/hour/btcusdc_trade.zip
+/crypto/bybit/daily/btcdai_trade.zip

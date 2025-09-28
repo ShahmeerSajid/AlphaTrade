@@ -1,0 +1,236 @@
+
+.
+├── CONTRIBUTING.md
+├── Dockerfile
+├── LICENSE
+├── Makefile
+├── README.md
+├── configs
+│   ├── README.md
+│   ├── default_config.yaml
+│   ├── island_config_example.yaml
+│   └── island_examples.yaml
+├── examples
+│   ├── circle_packing
+│   │   ├── README.md
+│   │   ├── best_program.py
+│   │   ├── best_program_info.json
+│   │   ├── circle_packing_1.png
+│   │   ├── circle_packing_10.png
+│   │   ├── circle_packing_190.png
+│   │   ├── circle_packing_460.png
+│   │   ├── config_phase_1.yaml
+│   │   ├── config_phase_2.yaml
+│   │   ├── evaluator.py
+│   │   ├── initial_program.py
+│   │   └── requirements.txt
+│   ├── circle_packing_with_artifacts
+│   │   ├── README.md
+│   │   ├── config_phase_1.yaml
+│   │   ├── config_phase_2.yaml
+│   │   ├── evaluator.py
+│   │   ├── initial_program.py
+│   │   └── requirements.txt
+│   ├── function_minimization
+│   │   ├── README.md
+│   │   ├── __pycache__
+│   │   │   └── evaluator.cpython-312.pyc
+│   │   ├── config.yaml
+│   │   ├── evaluator.py
+│   │   ├── initial_program.py
+│   │   ├── openai_config.yaml
+│   │   ├── openevolve_output
+│   │   │   ├── best
+│   │   │   │   ├── best_program.py
+│   │   │   │   └── best_program_info.json
+│   │   │   ├── checkpoints
+│   │   │   │   ├── checkpoint_10
+│   │   │   │   │   ├── best_program.py
+│   │   │   │   │   ├── best_program_info.json
+│   │   │   │   │   ├── metadata.json
+│   │   │   │   │   └── programs
+│   │   │   │   │       ├── 24cd2cee-778b-4731-8bc6-788785ec1b50.json
+│   │   │   │   │       ├── 3e1a9fd6-2c7d-460b-a173-0141d587718e.json
+│   │   │   │   │       ├── 5407dd85-20ca-4cb0-b5b5-28c48a71909e.json
+│   │   │   │   │       ├── 6af8288d-ab38-45d4-8535-a33b8964f962.json
+│   │   │   │   │       ├── 854286cc-f44d-4249-b0bb-10dfe159f2c7.json
+│   │   │   │   │       ├── 8bc97556-bfce-4d09-90d2-c4d964152139.json
+│   │   │   │   │       ├── dc194462-17f9-44e5-ad4e-cb50f53206c3.json
+│   │   │   │   │       ├── ebdfb9a8-e6e5-420a-b4e6-55f7a17ce45a.json
+│   │   │   │   │       ├── f36676ad-b4d6-4ad5-9c50-ee38762050e2.json
+│   │   │   │   │       └── fb420aaf-e70b-42b0-8fbf-a5e4bb06077b.json
+│   │   │   │   └── checkpoint_5
+│   │   │   │       ├── best_program.py
+│   │   │   │       ├── best_program_info.json
+│   │   │   │       ├── metadata.json
+│   │   │   │       └── programs
+│   │   │   │           ├── 5407dd85-20ca-4cb0-b5b5-28c48a71909e.json
+│   │   │   │           ├── 854286cc-f44d-4249-b0bb-10dfe159f2c7.json
+│   │   │   │           ├── 8bc97556-bfce-4d09-90d2-c4d964152139.json
+│   │   │   │           ├── ebdfb9a8-e6e5-420a-b4e6-55f7a17ce45a.json
+│   │   │   │           └── f36676ad-b4d6-4ad5-9c50-ee38762050e2.json
+│   │   │   └── logs
+│   │   │       ├── openevolve_20250713_141322.log
+│   │   │       ├── openevolve_20250713_141605.log
+│   │   │       ├── openevolve_20250713_141712.log
+│   │   │       └── openevolve_20250713_143217.log
+│   │   └── requirements.txt
+│   ├── llm_prompt_optimazation
+│   │   ├── README.md
+│   │   ├── best_program.txt
+│   │   ├── config.yaml
+│   │   ├── data.json
+│   │   ├── evaluator.py
+│   │   ├── initial_prompt.txt
+│   │   ├── requirements.txt
+│   │   └── run.sh
+│   ├── lm_eval
+│   │   ├── README.md
+│   │   ├── config.yml
+│   │   ├── evaluator_stub.py
+│   │   ├── initial_content_stub.txt
+│   │   ├── lm-eval.py
+│   │   ├── prompts
+│   │   │   ├── diff_user.txt
+│   │   │   ├── evaluation.txt
+│   │   │   ├── evolution_history.txt
+│   │   │   ├── full_rewrite_user.txt
+│   │   │   ├── previous_attempt.txt
+│   │   │   └── top_program.txt
+│   │   └── requirements.txt
+│   ├── mlx_metal_kernel_opt
+│   │   ├── README.md
+│   │   ├── best_program.py
+│   │   ├── best_program_info.json
+│   │   ├── config.yaml
+│   │   ├── evaluator.py
+│   │   ├── initial_program.py
+│   │   ├── openevolve_comparison_results_1750305870.json
+│   │   ├── openevolve_comparison_summary_1750305870.csv
+│   │   ├── quick_benchmark_test.py
+│   │   ├── quick_demo.py
+│   │   ├── qwen3_benchmark_suite.py
+│   │   ├── requirements.txt
+│   │   ├── run_benchmarks.py
+│   │   └── test_optimized_attention.py
+│   ├── online_judge_programming
+│   │   ├── README.md
+│   │   ├── config.yaml
+│   │   ├── evaluator.py
+│   │   ├── example.kattisrc
+│   │   ├── initial_program.py
+│   │   ├── requirements.txt
+│   │   └── submit.py
+│   ├── r_robust_regression
+│   │   ├── README.md
+│   │   ├── config.yaml
+│   │   ├── evaluator.py
+│   │   ├── initial_program.r
+│   │   └── requirements.txt
+│   ├── rust_adaptive_sort
+│   │   ├── README.md
+│   │   ├── config.yaml
+│   │   ├── evaluator.py
+│   │   ├── initial_program.rs
+│   │   └── requirements.txt
+│   ├── signal_processing
+│   │   ├── README.md
+│   │   ├── config.yaml
+│   │   ├── evaluator.py
+│   │   ├── initial_program.py
+│   │   └── requirements.txt
+│   └── symbolic_regression
+│       ├── README.md
+│       ├── bench
+│       │   ├── dataclasses.py
+│       │   └── datamodules.py
+│       ├── data_api.py
+│       ├── eval.py
+│       └── scripts.sh
+├── openevolve
+│   ├── __init__.py
+│   ├── __pycache__
+│   │   ├── __init__.cpython-312.pyc
+│   │   ├── cli.cpython-312.pyc
+│   │   ├── config.cpython-312.pyc
+│   │   ├── controller.cpython-312.pyc
+│   │   ├── database.cpython-312.pyc
+│   │   ├── evaluation_result.cpython-312.pyc
+│   │   └── evaluator.cpython-312.pyc
+│   ├── cli.py
+│   ├── config.py
+│   ├── controller.py
+│   ├── database.py
+│   ├── evaluation_result.py
+│   ├── evaluator.py
+│   ├── llm
+│   │   ├── __init__.py
+│   │   ├── __pycache__
+│   │   │   ├── __init__.cpython-312.pyc
+│   │   │   ├── base.cpython-312.pyc
+│   │   │   ├── ensemble.cpython-312.pyc
+│   │   │   └── openai.cpython-312.pyc
+│   │   ├── base.py
+│   │   ├── ensemble.py
+│   │   └── openai.py
+│   ├── prompt
+│   │   ├── __init__.py
+│   │   ├── __pycache__
+│   │   │   ├── __init__.cpython-312.pyc
+│   │   │   ├── sampler.cpython-312.pyc
+│   │   │   └── templates.cpython-312.pyc
+│   │   ├── sampler.py
+│   │   └── templates.py
+│   └── utils
+│       ├── __init__.py
+│       ├── __pycache__
+│       │   ├── __init__.cpython-312.pyc
+│       │   ├── async_utils.cpython-312.pyc
+│       │   ├── code_utils.cpython-312.pyc
+│       │   ├── format_utils.cpython-312.pyc
+│       │   └── metrics_utils.cpython-312.pyc
+│       ├── async_utils.py
+│       ├── code_utils.py
+│       ├── format_utils.py
+│       └── metrics_utils.py
+├── openevolve-architecture.png
+├── openevolve-logo.png
+├── openevolve-run.py
+├── openevolve-visualizer.png
+├── openevolve.egg-info
+│   ├── PKG-INFO
+│   ├── SOURCES.txt
+│   ├── dependency_links.txt
+│   ├── entry_points.txt
+│   ├── requires.txt
+│   └── top_level.txt
+├── pyproject.toml
+├── scripts
+│   ├── requirements.txt
+│   ├── static
+│   │   ├── css
+│   │   │   └── main.css
+│   │   └── js
+│   │       ├── graph.js
+│   │       ├── list.js
+│   │       ├── main.js
+│   │       ├── mainUI.js
+│   │       ├── performance.js
+│   │       ├── sidebar.js
+│   │       └── state.js
+│   ├── templates
+│   │   ├── index.html
+│   │   └── program_page.html
+│   └── visualizer.py
+├── setup.py
+└── tests
+    ├── test_artifacts.py
+    ├── test_artifacts_integration.py
+    ├── test_checkpoint_resume.py
+    ├── test_code_utils.py
+    ├── test_database.py
+    ├── test_evaluator_timeout.py
+    ├── test_llm_ensemble.py
+    ├── test_prompt_sampler.py
+    └── test_valid_configs.py
+

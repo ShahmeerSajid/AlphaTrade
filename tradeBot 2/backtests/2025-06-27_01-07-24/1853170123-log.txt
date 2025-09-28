@@ -1,0 +1,6 @@
+2013-10-07 00:00:00 Launching analysis for 1853170123 with LEAN Engine v2.5.0.0
+2013-10-07 00:00:00 Accurate daily end-times now enabled by default. See more at https://qnt.co/3YHaWHL. To disable it and use legacy daily bars set self.settings.daily_precise_end_time = False.
+2013-10-07 16:00:00 on_data: QuantConnect.Data.Slice
+2013-10-07 16:00:00 Purchased Stock
+2013-10-08 16:00:00 on_data: QuantConnect.Data.Slice
+2013-10-11 16:00:00 Algorithm Id:(1853170123) completed in 118.20 seconds at 0k data points per second. Processing total of 48 data points.

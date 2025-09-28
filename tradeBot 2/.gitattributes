@@ -1,0 +1,1 @@
+freqtrade/ft_userdata/user_data/data filter=lfs diff=lfs merge=lfs -text

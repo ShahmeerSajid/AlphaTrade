@@ -1,0 +1,198 @@
+
+
+# # # OpenEvolve Configuration for Trading Strategy Evolution
+# # # Place this file as: openevolve_output/openevolve_config.yaml
+
+# # General settings
+# max_iterations: 10                    # Number of evolution iterations
+# checkpoint_interval: 10               # Save checkpoints every N iterations
+# log_level: "INFO"                     # Logging level
+# random_seed:                     # For reproducible results
+
+# # Evolution settings
+# diff_based_evolution: true            # Use diff-based evolution (maybe this could imply completely doifferent logic for the new evolutions??)
+# max_code_length: 20000                # Maximum strategy file size
+
+# # LLM configuration 
+# llm:
+#   primary_model: "claude-3-5-sonnet-20241022"   
+#   # primary_model: "gpt-4-turbo"
+#   # api_base: "https://api.openai.com/v1"
+
+#   api_base: "https://api.anthropic.com/v1"  
+#   temperature: 0.9                             # Creativity level
+#   max_tokens: 8192                              # Max tokens per generation
+#   timeout: 120                                  # Request timeout in seconds
+#   retries: 3                                    # Number of retries
+#   retry_delay: 5                                # Delay between retries
+
+# # Prompt configuration for trading strategy evolution
+
+# # Maintain the existing freqtrade structure, hyperoptable parameters, and Gaussian Channel indicators.
+# #  Consider risk management, profit optimization, and market condition adaptability in your improvements.
+
+
+
+# # I would try to modify this .... remember
+# prompt:
+#   system_message: |
+#     You are an expert algorithmic trading strategist specializing in freqtrade strategies.
+#     Your task is to evolve and improve the RandomStrategy class for cryptocurrency trading.
+#     Focus on improving the entry/exit logic within the EVOLVE-BLOCK sections.
+#     Always ensure strategies include proper volume checks and are compatible with TAO/USD trading.
+#     Do not modify the class name, imports, or overall structure - only evolve the marked sections.
+#     Maintain the existing freqtrade structure, hyperoptable parameters, and Gaussian Channel indicators.
+#     Consider risk management, profit optimization, and market condition adaptability in your improvements.
+
+  
+#   num_top_programs: 3                 # Number of top programs to include in prompts
+#   num_diverse_programs: 2             # Number of diverse programs for inspiration
+#   use_template_stochasticity: true    # Add randomness to prompts for diversity
+
+# # Database configuration for evolution
+# database:
+#   population_size: 400                # Total number of strategies to maintain
+#   archive_size: 20                    # Size of elite archive
+
+#   # With 3 islands, one might evolve momentum strategies, another mean-reversion strategies, and the third 
+#   # volatility-based strategies. Migration shares the best ideas between them. I would use different combos here .... 
+
+#   num_islands: 7       # Number of evolution islands
+#   random_seed:          # We override database seed too ---> 
+#   elite_selection_ratio: 0.2          # Fraction of elite programs to select
+#   exploration_ratio: 0.3              # Exploration vs exploitation balance
+#   exploitation_ratio: 0.6             # Exploitation vs random selection
+#   migration_interval: 15              # Migrate between islands every N generations
+#   migration_rate: 0.2                 # Fraction of programs to migrate
+#   log_prompts: true                   # Log all prompts and responses
+
+# # Evaluator configuration
+# evaluator:
+#   timeout: 600                        # 10 minutes per strategy evaluation
+#   max_retries: 2                      # Number of retries for failed evaluations
+#   cascade_evaluation: true            # Use staged evaluation (faster)
+#   cascade_thresholds: [0.5, 0.75]     # Thresholds for advancing to next stage
+#   parallel_evaluations: 1             # Sequential evaluation (more stable)
+#   use_llm_feedback: false             
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# OpenEvolve Configuration for Trading Strategy Evolution
+# Enhanced with sophisticated prompt system and trading-specific optimizations
+
+# General settings
+max_iterations: 20
+checkpoint_interval: 10
+log_level: "INFO"
+random_seed:
+
+# Evolution settings
+diff_based_evolution: true
+max_code_length: 20000
+
+# LLM configuration (NO API KEY - set via environment variable)
+llm:
+  primary_model: "claude-3-5-sonnet-20241022"
+  api_base: "https://api.anthropic.com/v1"  
+  temperature: 0.9  # very high ... 
+  max_tokens: 8192
+  timeout: 120
+  retries: 3
+  retry_delay: 5
+
+# Enhanced prompt configuration with sophisticated sampling system
+
+    # Maintain the existing freqtrade structure, hyperoptable parameters, and indicator calculations.
+    # Always ensure strategies include proper volume checks and are compatible with crypto trading.
+    # Do not modify the class name, imports, or overall structure - only evolve the marked sections.
+    # Consider risk management, profit optimization, and market condition adaptability in your improvements.
+prompt:
+  # Base system message for trading strategy evolution (used by sampler.py)
+  system_message: |
+    You are an expert algorithmic trading strategist specializing in freqtrade strategies.
+    Your task is to evolve and improve trading strategies for cryptocurrency markets.
+    Focus on improving the entry/exit logic within the EVOLVE-BLOCK sections.
+
+    Maintain the existing freqtrade structure, hyperoptable parameters, and indicator calculations.
+    Always ensure strategies include proper volume checks and are compatible with crypto trading.
+    Do not modify the class name, imports, or overall structure - only evolve the marked sections.
+    Consider risk management, profit optimization, and market condition adaptability in your improvements.
+    
+
+  # Dynamic prompt sampling configuration (enables sophisticated prompt system)
+  num_top_programs: 3
+  num_diverse_programs: 2
+  use_template_stochasticity: true
+  
+  # Template customization (uses default templates from templates.py)
+  template_dir: null
+  
+  # Artifact inclusion for debugging and context
+  include_artifacts: true
+  max_artifact_bytes: 2000
+  artifact_security_filter: true
+  
+  #Template variations for diversity (used by sampler.py for dynamic prompts)
+  template_variations:
+    focus_area:
+      - "entry signal optimization and timing improvement"
+      - "exit strategy refinement and profit capture"
+      - "risk management enhancement and drawdown control"
+      - "market condition adaptation and volatility handling"
+      - "indicator combination improvement and signal filtering"
+      - "position sizing optimization and capital management"
+    trading_style:
+      - "momentum-based approach with trend confirmation"
+      - "mean-reversion strategy with oversold/overbought signals"
+      - "volatility-aware trading with adaptive thresholds"
+      - "trend-following method with breakout detection"
+      - "multi-timeframe analysis with confluence signals"
+      - "volume-weighted strategies with liquidity consideration"
+    improvement_focus:
+      - "reducing false signals through better filtering"
+      - "improving risk-adjusted returns via stop-loss optimization"
+      - "enhancing market timing through volatility analysis"
+      - "increasing trade efficiency and reducing noise"
+      - "adapting to different market regimes and conditions"
+
+# Database configuration for evolution with island-based approach
+database:
+  population_size: 400
+  archive_size: 20
+  random_seed:
+  
+  # Island evolution for diverse strategy development
+  num_islands: 10
+  random_seed:
+  
+  elite_selection_ratio: 0.2
+  exploration_ratio: 0.3
+  exploitation_ratio: 0.6
+  migration_interval: 15
+  migration_rate: 0.2
+  
+  # Enhanced logging for prompt system analysis
+  log_prompts: true
+
+# Evaluator configuration for trading strategy assessment
+evaluator:
+  timeout: 600
+  max_retries: 2
+  cascade_evaluation: true
+  cascade_thresholds: [0.5, 0.75]
+  parallel_evaluations: 1
+  use_llm_feedback: false

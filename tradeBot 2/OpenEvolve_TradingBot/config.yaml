@@ -1,0 +1,296 @@
+
+
+# # True OpenEvolve Configuration - Complete Strategy Evolution
+# max_iterations: 4   # num of generations ....
+# log_level: "INFO"
+
+# # LLM configuration for creative strategy generation
+# llm:
+#   primary_model: "claude-3-5-sonnet-20241022"
+#   primary_model_weight: 1.0
+#   temperature: 0.5  # Balance between creativity and reliability
+#   max_tokens: 8192  # Larger for complete strategies
+
+# # Population settings for strategy innovation
+# population:
+#   population_size: 6        # num of variants ...
+#   elite_preservation: 1     # Keep 1 best, evolve the rest
+#   evolution_pressure: 0.8   # High pressure for innovation
+  
+#   # Strategy diversity requirements
+#   enforce_diversity: true
+#   max_similar_strategies: 2  # Prevent convergence to same approach
+
+# # Output configuration
+# output:
+#   save_best_strategies: true
+
+#   ## Change the path ... 
+#   strategy_output_dir: "/Users/shahmeer/Desktop/TradeBot_summer 2025/trading-bot/freqtrade/ft_userdata/user_data/strategies/evolved_strategies"
+#   log_evolution_progress: true
+#   save_strategy_types: true  # Track different strategy types
+
+# # Evolution approach - COMPLETE STRATEGY CREATION
+# evolution_method: "complete_innovation"  # Not parameter tuning
+
+# # Strategy innovation targets
+# innovation_targets:
+#   - "entry_logic_creativity"      # Novel entry combinations
+#   - "exit_logic_innovation"       # Creative exit strategies  
+#   - "indicator_combinations"      # Unique indicator mixing
+#   - "risk_management_evolution"   # Adaptive risk systems
+#   - "market_regime_detection"     # Smart market adaptation
+
+# # Available indicators for AI to use for the random strategy function ...
+# available_indicators:
+#   momentum:
+#     - "RSI"
+#     - "MACD" 
+#     - "Stochastic"
+#     - "Williams %R"
+#     - "ROC"
+#   trend:
+#     - "EMA"
+#     - "SMA"
+#     - "TEMA"
+#     - "WMA"
+#   volatility:
+#     - "Bollinger Bands"
+#     - "ATR"
+#     - "Keltner Channels"
+#   volume:
+#     - "Volume"
+#     - "Volume Moving Average"
+#     - "On Balance Volume"
+#   custom:
+#     - "Price Action Patterns"
+#     - "Support/Resistance"
+
+# # Strategy evolution goals
+# evolution_goals:
+#   primary: "maximize_innovation"     # Create novel approaches
+#   secondary: "optimize_performance"  # Improve results
+#   tertiary: "ensure_robustness"     # Stable strategies
+
+# # Performance thresholds
+# fitness_thresholds:
+#   minimum_trades: 30              # Must generate trades
+#   maximum_drawdown: 0.5           # Max 50% drawdown
+#   target_fitness: 0.7             # Target fitness score
+#   target_profit: 8.0              # Target 8% profit
+#   innovation_bonus: 0.1           # Bonus for unique approaches
+
+# # Stopping criteria
+# stopping_criteria:
+#   max_generations: 4
+#   target_fitness: 0.8
+#   target_profit: 15.0
+#   plateau_generations: 3         # Stop if no significant change in total return (profit) in 3 generations ...
+#   innovation_threshold: 0.6       # Stop if highly innovative strategy found
+
+# # Strategy validation
+# validation:
+#   require_freqtrade_compatibility: true
+#   require_volume_checks: true
+#   require_proper_syntax: true
+#   require_unique_logic: true      # Prevent duplicate strategies
+  
+# # Innovation scoring
+# innovation_scoring:
+#   novelty_weight: 0.3        # 30% weight on how unique the strategy is
+#   performance_weight: 0.7    # 70% weight on actual performance
+  
+#   # Novelty factors
+#   unique_indicator_combinations: 0.4
+#   creative_entry_logic: 0.3
+#   innovative_exit_mechanisms: 0.3
+
+# # Advanced evolution settings
+# advanced:
+#   crossover_innovation: true     # Mix concepts from different strategies
+#   mutation_creativity: "high"    # High creativity in mutations
+#   allow_radical_changes: true    # Allow completely different approaches
+#   preserve_successful_concepts: true  # Keep working elements
+
+
+
+
+
+
+# # Enhanced OpenEvolve Configuration - Enforced Strategy Diversity
+# max_iterations: 6   # lets start with this number (number of generations ...)
+# log_level: "INFO"
+
+# # LLM configuration for creative strategy generation
+# llm:
+#   primary_model: "claude-3-5-sonnet-20241022"
+#   #primary_model: "claude-3-5-opus-20241022" # the most powerful model currently ... 
+#   primary_model_weight: 1.0
+#   temperature: 0.6  # Higher creativity for diversity
+#   max_tokens: 8192
+
+# # Population settings for ENFORCED strategy diversity
+# population:
+#   population_size: 6        # Each slot gets a different strategy type
+#   elite_preservation: 1     # Keep 1 best only if fitness > 0.3
+#   evolution_pressure: 0.9   # High pressure for innovation
+  
+#   # MANDATORY strategy diversity enforcement
+#   enforce_diversity: true
+#   force_strategy_types: true  # NEW: Force different types per variant
+#   max_similar_strategies: 0   # NO duplicates allowed
+#   duplicate_detection: true   # NEW: Hash-based duplicate detection
+
+# # Output configuration
+# output:
+#   save_best_strategies: true
+#   strategy_output_dir: "/Users/shahmeer/Desktop/TradeBot_summer 2025/trading-bot/freqtrade/ft_userdata/user_data/strategies/evolved_strategies"
+#   log_evolution_progress: true
+#   save_strategy_types: true
+#   save_diversity_report: true  # NEW: Track diversity metrics
+
+# # MANDATORY strategy type rotation (prevents convergence)
+# mandatory_strategy_types:
+#   variant_0: "momentum_macd"      # MACD-based momentum
+#   variant_1: "mean_reversion_rsi" # RSI mean reversion
+#   variant_2: "volatility_bollinger" # Bollinger band volatility
+#   variant_3: "volume_surge"       # Volume-based signals
+#   variant_4: "trend_following_ema" # EMA trend following
+#   variant_5: "oscillator_stochastic" # Stochastic oscillator
+
+# # Strategy innovation targets (DIVERSIFIED)
+# innovation_targets:
+#   - "indicator_specialization"    # Each strategy focuses on ONE primary indicator
+#   - "unique_entry_logic"         # No copying previous entry patterns
+#   - "creative_exit_mechanisms"   # Novel exit strategies
+#   - "risk_management_variety"    # Different risk approaches
+#   - "timeframe_optimization"     # Vary timeframes per strategy type
+
+# # Available indicators BY STRATEGY TYPE
+# available_indicators:
+#   momentum_macd:
+#     primary: ["MACD", "MACD Signal", "MACD Histogram"]
+#     secondary: ["Volume", "Price ROC"]
+#     banned: ["RSI", "Bollinger Bands", "Stochastic"]
+  
+#   mean_reversion_rsi:
+#     primary: ["RSI", "RSI Divergence"]
+#     secondary: ["Support/Resistance", "Volume"]
+#     banned: ["MACD", "Bollinger Bands", "EMA Crossover"]
+  
+#   volatility_bollinger:
+#     primary: ["Bollinger Bands", "BB Width", "BB Squeeze"]
+#     secondary: ["ATR", "Volume"]
+#     banned: ["RSI", "MACD", "Stochastic"]
+  
+#   volume_surge:
+#     primary: ["Volume", "Volume MA", "On Balance Volume"]
+#     secondary: ["Price Momentum", "ATR"]
+#     banned: ["RSI", "MACD", "Bollinger Bands"]
+  
+#   trend_following_ema:
+#     primary: ["EMA Fast", "EMA Slow", "EMA Crossover"]
+#     secondary: ["Trend Strength", "Volume"]
+#     banned: ["RSI", "Bollinger Bands", "MACD"]
+  
+#   oscillator_stochastic:
+#     primary: ["Stochastic %K", "Stochastic %D", "Williams %R"]
+#     secondary: ["Price Oscillator", "Volume"]
+#     banned: ["RSI", "MACD", "Bollinger Bands"]
+
+# # Strategy evolution goals (DIVERSITY FOCUSED)
+# evolution_goals:
+#   primary: "enforce_diversity"       # Force different approaches
+#   secondary: "optimize_performance"  # Then improve results
+#   tertiary: "prevent_convergence"   # Stop similar strategies
+
+# # Performance thresholds (ADJUSTED FOR DIVERSITY)
+# fitness_thresholds:
+#   minimum_trades: 20              # Reduced for diverse strategies
+#   maximum_drawdown: 0.6           # More lenient for experimentation
+#   target_fitness: 0.6             # Lower initial target
+#   target_profit: 5.0              # More realistic target
+#   diversity_bonus: 0.2            # Big bonus for unique approaches
+
+# # Stopping criteria (DIVERSITY AWARE)
+# stopping_criteria:
+#   max_generations: 6
+#   target_fitness: 0.7             # Achievable target
+#   target_profit: 8.0              # Realistic profit target
+#   plateau_generations: 4          # More patience for diversity
+#   innovation_threshold: 0.5       # Lower bar for innovation
+#   diversity_threshold: 6          # Must have 6 different strategy types
+
+# # Strategy validation (ENHANCED)
+# validation:
+#   require_freqtrade_compatibility: true
+#   require_volume_checks: true
+#   require_proper_syntax: true
+#   require_unique_logic: true      # Prevent duplicate strategies
+#   check_strategy_type_compliance: true  # NEW: Verify mandated types
+#   ban_similar_patterns: true      # NEW: Block similar logic patterns
+  
+# # Innovation scoring (DIVERSITY WEIGHTED)
+# innovation_scoring:
+#   novelty_weight: 0.5        # 50% weight on uniqueness
+#   performance_weight: 0.5    # 50% weight on performance
+  
+#   # Novelty factors (ENHANCED)
+#   unique_indicator_usage: 0.4     # Using mandated indicators correctly
+#   original_entry_logic: 0.3       # Not copying previous patterns
+#   creative_exit_mechanisms: 0.3   # Novel exit strategies
+
+# # Advanced evolution settings (DIVERSITY FOCUSED)
+# advanced:
+#   crossover_innovation: false     # Disable crossover to prevent blending
+#   mutation_creativity: "maximum"  # Maximum creativity in mutations
+#   allow_radical_changes: true     # Allow completely different approaches
+#   preserve_successful_concepts: false  # Don't preserve to force diversity
+  
+#   # NEW: Diversity enforcement
+#   hash_based_duplicate_detection: true
+#   strategy_type_compliance_check: true
+#   ban_convergent_patterns: true
+#   force_indicator_specialization: true
+
+# # Evaluation settings (TUNED FOR DIVERSITY)
+# evaluation:
+#   timeout_seconds: 150            # More time for complex strategies
+#   retry_failed_strategies: 2      # Retry failed evaluations
+#   penalize_duplicates: true       # Heavy penalty for similar strategies
+#   reward_diversity: true          # Bonus points for unique approaches
+  
+# # Risk management (RELAXED FOR EXPERIMENTATION)
+# risk_management:
+#   max_concurrent_evaluations: 1
+#   strategy_isolation: true
+#   cleanup_failed_strategies: true
+#   backup_successful_strategies: true
+
+# # Logging and monitoring (ENHANCED)
+# monitoring:
+#   log_strategy_diversity: true
+#   track_indicator_usage: true
+#   monitor_convergence: true
+#   alert_on_duplicates: true
+#   save_diversity_metrics: true
+
+
+
+
+# Required sections for OpenEvolve integration
+# max_iterations: 10
+
+# llm:
+#   primary_model: "claude-3-5-sonnet-20241022"  
+
+#   temperature: 0.8
+#   max_tokens: 8192
+
+# population:
+#   population_size: 6
+
+# output:
+#   strategy_output_dir: "/Users/shahmeer/Desktop/TradeBot_summer 2025/trading-bot/freqtrade/ft_userdata/user_data/strategies/evolved_strategies"
+
+# log_level: "INFO"
