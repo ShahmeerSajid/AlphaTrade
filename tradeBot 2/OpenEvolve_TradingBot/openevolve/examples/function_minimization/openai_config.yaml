@@ -1,0 +1,26 @@
+# Simple OpenAI configuration
+max_iterations: 10
+checkpoint_interval: 5
+log_level: "INFO"
+
+llm:
+  primary_model: "gpt-3.5-turbo"
+  primary_model_weight: 1.0
+  temperature: 0.7
+  max_tokens: 4096
+
+prompt:
+  system_message: "You are an expert programmer specializing in optimization algorithms."
+  num_top_programs: 3
+
+database:
+  population_size: 10
+  archive_size: 5
+  num_islands: 1
+
+evaluator:
+  timeout: 60
+  parallel_evaluations: 2
+
+diff_based_evolution: true
+allow_full_rewrites: false
