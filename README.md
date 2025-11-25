@@ -1,1 +1,1 @@
-Quantitative AI Project being developed at McGill AI Lab.
+Quantitative AI Project developed under supervision of McGill AI Lab.
